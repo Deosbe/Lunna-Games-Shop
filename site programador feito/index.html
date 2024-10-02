@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+    <div class="container container-center">
+        <h1>LunaLevel Games</h1>
+        <nav class="text-end me-2">
+            <ul>
+                <li>
+                    <a href="#about" class="btn active"  >Sobre a Loja</a>
+                </li>
+                <li>
+                    <a href="#produtos" class="btn active" >Produtos</a>
+                </li>
+                <li>
+                    <a href="#contact" class="btn active" >Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section id="about">
+        <div class="container container-center">
+            <img class="store-front container" src="./images/loja.jpg" alt="faxada da loja games shop"/>
+            <div class="container-text">
+                <h2>sobre a loja</h2>
+                <p>
+                    Na Lunalevel Games, os clientes encontram uma grande variedade de consoles, desde as plataformas mais populares como PlayStation, Xbox e Nintendo Switch, até acessórios exclusivos para melhorar a experiência de jogo. Além disso, a loja também oferece peças de computador, perfeitas para quem quer montar ou melhorar sua máquina gamer, com componentes de última geração, como placas de vídeo, processadores e periféricos de alta performance.
+                </p>
+                <p>
+                    A Lunalevel Games não é apenas um lugar de compra, mas um ponto de encontro para gamers, com um atendimento especializado que ajuda cada cliente a encontrar o que precisa para levar sua experiência de jogo a um novo nível.
+                </p>
+                <ul class="brands-list">
+                    <li>
+                        <img id="nintendo" src="./images/nintendo.png" alt="nintendo">
+                    </li>
+                    <li>
+                        <img id="xbox" src="./images/xbox.png" alt="xbox">
+                    </li>
+                    <li>
+                        <img id="playstation" src="./images/playstation.png" alt="playstation">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="container container-center" id="products">
+        <h2 class="d-flex   justify-content-center h2 text-center">Produtos</h2>
+        <section id="cardapio" class="pt-4 pb-5">
+            <h3 class="text-center mb-5">Nossos Produtos</h3>
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5 d-none">Nosso <span class="text-colored">cardapio</span></h2>
+                </div>
+                <div class="row container" id="produtos">
+                    <aside class="col-md-2 p-0"><!-- O elemento <aside> no HTML é uma tag semântica que define um conteúdo complementar ou "secundário" ao conteúdo principal de uma página da web. O conteúdo dentro de uma <aside> geralmente está relacionado ao conteúdo circundante, mas não faz parte diretamente do fluxo principal de leitura. Esse elemento é frequentemente usado para destacar informações como: Barras laterais (sidebars) com widgets ou links adicionais. -->
+                        <nav class="nav nav-pills flex-collumn nav-cardapio justify-content-center"><!--a classe (flex-collumn) é a classe no qual altera o flex box deixando os itens um abaixo do outro-->
+                            <button id="button-nav" data-bs-toggle="tab" data-bs-target="#PlayStation" type="button" class="fw-bold nav-link text-break text-center  text-colored active text-start">Playstation</button>
+                            <button id="button-nav" data-bs-toggle="tab" data-bs-target="#Xbox" type="button" class="fw-bold nav-link text-break text-center  text-colored ">Xbox</button>
+                            <button id="button-nav" data-bs-toggle="tab" data-bs-target="#Nintendo" type="button" class="fw-bold nav-link text-break text-center  text-colored ">Nintendo</button>
+                            <button id="button-nav" data-bs-toggle="tab" data-bs-target="#Gift-card" type="button" class="fw-bold nav-link text-break text-center  text-colored ">Google PLay</button>
+                            <button id="button-nav" data-bs-toggle="tab" data-bs-target="#computador" type="button" class="fw-bold nav-link text-break text-center  text-colored ">Computadores</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="PlayStation">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/PLAYSTATION 5.png" alt="Coca-Cola">
+                                        <h5 class="text-colored fw-bold mt-2">PlayStation 5 (Fat)</h5>
+                                        <h4 class="text-colored fw-bold">3.600,00R$</h4>
+                                        <p class="text-break">Os jogos mais incríveis estão no PS5, com 825 GB de armazenamento</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container mb-3 pb-1" src="./images/PLAYSTATION 4.png" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">PlayStation 4 (Fat)</h5>
+                                        <h4 class="text-colored fw-bold">2.400,00R$</h4>
+                                        <p class="text-break">Experimente o poder do entretenimento com o Sony PlayStation 4 1TB Standard na cor Preto Onyx</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container mb-4 pb-2" src="./images/ps portatil.png" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">PlayStation Portal</h5>
+                                        <h4 class="text-colored fw-bold">1.800,00R$</h4>
+                                        <p class="text-break">O PlayStation Portal consegue reproduzir jogos compatíveis instalados no seu PS5, incluindo seus preferidos para PS5 e PS4</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container mb-4" src="./images/ps vr-2.png" alt="Suco">
+                                        <h5 class="text-colored fw-bold mt-2">PlayStation VR-2</h5>
+                                        <h4 class="text-colored fw-bold">4.500,00R$</h4>
+                                        <p class="text-break">A tecnologia PlayStation VR2 Sense proporciona emoção e imersão com vibrações sutis no headset, áudio em 3D</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Xbox">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/Xbox sx.png" alt="cerveja">
+                                        <h5 class="text-colored fw-bold mt-2">Xbox Series X</h5>
+                                        <h4>4.000,00R$</h4>
+                                        <p class="text-break">Com seu console Xbox Series você terá entretenimento garantido todos os dias.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/Xbox ss.png" alt="vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Xbox Series S</h5>
+                                        <h4>2.700,00R$</h4>
+                                        <p class="text-break">Um ótimo console para quem quer jogar jogos da nova geração, e tbm os jogos das antigas sem pagar muinto.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/Xbox control adaptative.jpg" alt="vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Xbox Controle adaptativo</h5>
+                                        <h4>1.000,00R$</h4>
+                                        <p class="text-break">Projetado para suprir as necessidades dos jogadores com mobilidade limitada.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="/images/Xbox headset.jpg" alt="vinho">
+                                        <h5 class="text-colored fw-bold mt-2">Headset Xbox</h5>
+                                        <h4>730,00R$</h4>
+                                        <p class="text-break">Jogue em alto e bom som com o novo fone de ouvido sem fio Xbox.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Nintendo">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/Switch.png" alt="entrada">
+                                        <h5 class="text-colored fw-bold mt-2">Nintendo Switch</h5>
+                                        <h4>2.000,00R$</h4>
+                                        <p class="text-break">Nintendo Switch se adapta ao seu ambiente e é um verdadeiro console portátil e doméstico</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container mt-3 mb-5 pb-2" src="./images/Switch-lite.png" alt="entrada">
+                                        <h5 class="text-colored fw-bold pt-3">Nintendo Switch Lite</h5>
+                                        <h4>1.200,00R$</h4>
+                                        <p class="text-break">Nintendo Switch Lite é uma versão compacta e totalmente portátil do console de videogame Nintendo Switch</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container mt-3 mb-5 pt-2" src="./images/Switch-pro-controler.png" alt="entrada">
+                                        <h5 class="text-colored fw-bold pt-3">Nintendo Switch Lite</h5>
+                                        <h4>320,00R$</h4>
+                                        <p class="text-break">Aumente o nível das suas sessões de jogo com o controle Pro Controller, exclusivo para o Nintendo Switch</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Gift-card">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/gift-card.webp" alt="pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Gift Card Google Play</h5>
+                                        <h4>300R$</h4>
+                                        <p class="text-break">Com milhões de apps, jogos e muito mais para descobrir, o Google Play tem opções para todos os gostos.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/gift-card.webp" alt="pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Gift Card Google Play</h5>
+                                        <h4>200R$</h4>
+                                        <p class="text-break">Com milhões de apps, jogos e muito mais para descobrir, o Google Play tem opções para todos os gostos.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/gift-card.webp" alt="pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Gift Card Google Play</h5>
+                                        <h4>100R$</h4>
+                                        <p class="text-break">Com milhões de apps, jogos e muito mais para descobrir, o Google Play tem opções para todos os gostos.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/gift-card.webp" alt="pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Gift Card Google Play</h5>
+                                        <h4>50R$</h4>
+                                        <p class="text-break">Com milhões de apps, jogos e muito mais para descobrir, o Google Play tem opções para todos os gostos.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/gift-card.webp" alt="pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Gift Card Google Play</h5>
+                                        <h4>40R$</h4>
+                                        <p class="text-break">Com milhões de apps, jogos e muito mais para descobrir, o Google Play tem opções para todos os gostos.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/gift-card.webp" alt="pizza">
+                                        <h5 class="text-colored fw-bold mt-2">Gift Card Google Play</h5>
+                                        <h4>20R$</h4>
+                                        <p class="text-break">Com milhões de apps, jogos e muito mais para descobrir, o Google Play tem opções para todos os gostos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane container" id="computador">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/I9 KF.jpg" alt="bolo">
+                                        <h5 class="text-colored fw-bold mt-2">Intel Core I9 14900KF</h5>
+                                        <h4>4.000,00R$</h4>
+                                        <p class="text-break">Desempenho que te leva mais longe com os processadores Intel® Core™ i9.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/Ryzen 9 7950X3D.jpg" alt="cupcake">
+                                        <h5 class="text-colored fw-bold mt-2">AMD Ryzen 9 7950x3D</h5>
+                                        <h4>4.700,00R$</h4>
+                                        <p class="text-break">processadores AMD Ryzen Série 7000X3D, você obtém um grande aumento no desempenho nos jogos¹</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/Placa mãe asus.jpg" alt="cupcake">
+                                        <h5 class="text-colored fw-bold mt-2">Placa Mãe Asus Rog Maximus Z790(Intel)</h5>
+                                        <h4>5.300,00R$</h4>
+                                        <p class="text-break">A ROG Maximus Z790 Formula é a placa-mãe definitiva a apresentar nossa estética Moonlight White</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/Placa mãe asrock.jpg" alt="cupcake">
+                                        <h5 class="text-colored fw-bold mt-2">Placa Mae AsRock TRX50 WS(AMD)</h5>
+                                        <h4>5.950,00R$</h4>
+                                        <p class="text-break">AsRock tem o nome de um tipo específico de corrente de água com ondas fortes que ocorre no oceano.</p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 container" src="./images/memoria ram.jpg" alt="cupcake">
+                                        <h5 class="text-colored fw-bold mt-2">Memoria Corsair Dominator Titanium RGB, 96GB (2x48GB)</h5>
+                                        <h4>5.950,00R$</h4>
+                                        <p class="text-break">A memória CORSAIR DOMINATOR TITANIUM RGB DDR5 combina estilo limpo e refinado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+
+    <footer>
+        <div class="container container-center" id="contact">
+            <h2>Contato</h2>
+            <div class="contact-methods">
+                <div>
+                    <h3 class="">Entre em Contato</h3>
+                    <ul class="social-links ">
+                        <li>
+                            <a href="#" title="siga-nos no Instagram">
+                                <i class="bi bi-instagram fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="siga-nos no Facebook">
+                                <i class="bi bi-facebook fs-1" ></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="Entre em contato Conosco pelo whatsapp">
+                                <i class="bi bi-whatsapp fs-1" ></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Venha Ate Nois</h3>
+                    <p>
+                        Rua Javacript n 124,  HTML Feira de Santane BA
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <p>
+                &copy; LunaLevel Games   Todos os Direitos Reservador        2024
+            </p>
+        </div>
+    </footer>
+
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
